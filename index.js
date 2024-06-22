@@ -10,11 +10,11 @@ const PORT = 5000
 const corsOptions = {
     origin: [   
                 'http://localhost:3000', 
-                'http://localhost:3001/productos', 
-                'http://localhost:3002/productos', 
-                'http://localhost:3004/productos', 
-                'http://localhost:3005/productos', 
-                'https://empire-sm.vercel.app/productos'
+                'http://localhost:3001', 
+                'http://localhost:3002', 
+                'http://localhost:3004', 
+                'http://localhost:3005', 
+                'https://empire-sm.vercel.app'
             ]
 }
 
