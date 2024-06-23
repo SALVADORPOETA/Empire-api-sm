@@ -24,6 +24,17 @@ app.use(bodyParser.json())
 
 app.use('/products', productsRoutes)
 
-app.get('/', (req, res) => res.send('Hello from homepage.'))
-
+app.get('/', (req, res) => {
+    const homePageContent = `
+        <html>
+            <head>
+                <title>Homepage</Title>
+            </head>
+            <body>
+                <p>This is the homepage. Start to use this API here: <a href="https://empire-api-sm.vercel.app/products">Products Data</a></p>
+            </body>
+        </html>
+    `
+    res.send(homePageContent)
+})
 app.listen(PORT, () => console.log(`Server Running on port: http://localhost:${PORT}`))
